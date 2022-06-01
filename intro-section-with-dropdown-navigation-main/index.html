@@ -1,39 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="./style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  Features
-  Company
-  Careers
-  About
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.svg" alt="logo" />
+      <a href="#">Features</a>
+      <a href="#">Company</a>
+      <a href="#">Careers</a>
+      <a href="#">About</a>
+      <a href="#">Login</a>
+      <a href="#">Register</a>
+      <!-- Features Company Careers About Login Register -->
+    </header>
 
-  Login
-  Register
+    <main>
+      <div class="text-side">
+        <h1>Make remote work</h1>
 
-  Make remote work
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
+        <button>Learn more</button>
 
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <div class="client-logo">
+          <img src="./images/client-databiz.svg" alt="databiz logo" />
+          <img src="./images/client-audiophile.svg" alt="audiophile log" />
+          <img src="./images/client-meet.svg" alt="meet log" />
+          <img src="./images/client-maker.svg" alt="maker logo" />
+        </div>
+      </div>
+
+      <div class="image-side">
+        <img class="hero" src="./images/image-hero-desktop.png" alt="hero" />
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Gustavo Bernardo</a>.
+    </div>
+  </body>
 </html>
