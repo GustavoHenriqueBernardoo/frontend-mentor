@@ -1,0 +1,115 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+#### Text
+
+- Very dark desaturated blue: hsl(238, 29%, 16%)
+- Soft red: hsl(14, 88%, 65%)
+
+#### Gradient
+
+Background gradient:
+
+- Soft violet: hsl(273, 75%, 66%)
+- Soft blue: hsl(240, 73%, 65%)
+
+### Neutral
+
+#### Text
+
+- Very dark grayish blue: hsl(237, 12%, 33%)
+- Dark grayish blue: hsl(240, 6%, 50%)
+
+#### Dividers
+
+- Light grayish blue: hsl(240, 5%, 91%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 12px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700 */
+
+@import url('https://fonts.google.com/specimen/Kumbh+Sans');
+
+:root {
+  /* ### Primary */
+
+  /* #### Text */
+  --veryDarkBlue: hsl(238, 29%, 16%);
+  --softRed: hsl(14, 88%, 65%);
+
+  /* #### Gradient */
+
+  --softViolet: hsl(273, 75%, 66%);
+  --softBlue: hsl(240, 73%, 65%);
+
+  /* -------------------- */
+  /* ### Neutral */
+
+  /* #### Text */
+  --veryDarkGrayishBlue: hsl(237, 12%, 33%);
+  --DarkGrayishBlue: hsl(240, 6%, 50%);
+
+  /* #### Dividers */
+
+  --lightGrayishBlue: hsl(240, 5%, 91%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 12px;
+
+  background-image: linear-gradient(
+    var(--softViolet),
+    var(--softViolet),
+    var(--softBlue),
+    var(--softBlue)
+  );
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 1440px;
+  height: 100vh;
+  overflow: hidden; /*Scroll bar hidden by default*/
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 20px;
+  border: 1px grey solid;
+  padding: 20px;
+
+  margin: 0 1rem 0 1rem;
+  background-color: var(--lightGrayishBlue);
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+
+  width: 900px;
+  height: 500px;
+  overflow: hidden;
+}
