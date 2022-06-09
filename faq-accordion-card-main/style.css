@@ -112,4 +112,28 @@ body {
   width: 900px;
   height: 500px;
   overflow: hidden;
+
+  position: absolute;
+}
+
+.image {
+  border: 1px solid black;
+  width: 384px;
+}
+.box {
+  position: relative;
+  /* top: 200px; */
+  z-index: 1;
+  right: 446px;
+  top: 60px;
+}
+
+.woman {
+  position: relative;
+  right: 101px;
+  top: 9px;
+}
+
+.down {
+  border: 1px solid black;
 }
